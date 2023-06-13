@@ -7,11 +7,11 @@ def test_encrypt_message():
         encrypt_message(6, 4)
 
     with pytest.raises(TypeError, match="tipo inválido para key"):
-        encrypt_message("message", "invalidkey")
+        encrypt_message("invalidkey", "3")
 
 
 assert encrypt_message("kuroneko", 3) == "ruk_okeno"
 
-assert encrypt_message("kuroneko", 6) == "uk_okenor"
+assert encrypt_message("kuroneko", 6) == "oken_oruk"
 
-assert encrypt_message("kuroneko", 9) == "okenoruk"
+assert encrypt_message("kuroneko", 10) == "okenoruk"
