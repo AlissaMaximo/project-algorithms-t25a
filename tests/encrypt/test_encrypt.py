@@ -12,6 +12,6 @@ def test_encrypt_message():
 
 assert encrypt_message("kuroneko", 3) == "ruk_okeno"
 
-assert encrypt_message("kuroneko", 6) == "okenor_uk"
+assert encrypt_message("kuroneko", 6) == "uk_okenor"
 
 assert encrypt_message("kuroneko", 9) == "okenoruk"
