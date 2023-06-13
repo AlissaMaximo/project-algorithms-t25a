@@ -7,7 +7,7 @@ def test_encrypt_message():
         encrypt_message(6, 4)
 
     with pytest.raises(TypeError, match="tipo inválido para key"):
-        encrypt_message("invalidkey", "3")
+        encrypt_message("message", "invalidkey")
 
 
 assert encrypt_message("maca", 3) == "cam_a"
