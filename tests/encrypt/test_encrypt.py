@@ -10,8 +10,8 @@ def test_encrypt_message():
         encrypt_message("invalidkey", "3")
 
 
-assert encrypt_message("kuroneko", 3) == "ruk_okeno"
+assert encrypt_message("maca", 3) == "cam_a"
 
-assert encrypt_message("kuroneko", 6) == "ok_enoruk"
+assert encrypt_message("maca", 2) == "ac_am"
 
-assert encrypt_message("kuroneko", 10) == "okenoruk"
+assert encrypt_message("maca", 5) == "acam"
